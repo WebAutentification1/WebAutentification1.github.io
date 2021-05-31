@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="utf-8">
+        <title>Spring Security Example </title>
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ListaProducto.html">Productos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  </div><br><br>
+        <div class="container">
+        
+        <form th:action="@{/login}" method="post">
+            <div><label> User Name : <input type="text" class="form-control" name="username"/> </label></div>
+            <div><label> Password: <input type="password" class="form-control" name="password"/> </label></div>
+            <a href="/menu.html"  class="btn btn-primary">Sign In</a>
+        </form>
+        </div>
+        </div><br><!-- fin del contenedor -->
+<div class="container-fluid">
+	<footer class="jumbotron text-center">
+	@Copy;marc123amr@gmail.com<br>
+	Desarrollado por Marco Antonio Morales Rios 
+	desarrollado con SpringFramework & Boottrap
+	</footer>
+</div>
+    </body>
+</html>
